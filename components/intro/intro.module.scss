@@ -1,0 +1,89 @@
+$wrapper: 1920;
+@mixin fza($min, $default) {
+    $added: #{$default - $min};
+    @media (max-width: 767px) {
+        font-size: calc(#{$min + px} + (#{$added} + #{$added} * 0.7) * ((100vw - 320px) / #{$wrapper}));
+    }
+    @media (min-width: 767px) {
+        font-size: calc(#{$min + px} + #{$added} * (100vw / #{$wrapper}));
+    }
+}
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    @include fza(24, 92);
+    line-height: 1;
+    color: white;
+    text-align: center;
+    transition: 0.4s ease;
+    &::after {
+        position: absolute;
+        top: 115%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+        content: "";
+        width: inherit;
+        height: 3px;
+        animation-name: intro;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
+.logo {
+    padding-top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 108px;
+    color: white;
+    text-align: center;
+    animation-name: animation-logo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes intro {
+    0% {
+        border-bottom: 0;
+        transform: scale(0);
+    }
+    100% {
+        border-bottom: 3px solid #fff;
+        transform: scale(1);
+    }
+}
+
+@keyframes animation-logo {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+}
+
