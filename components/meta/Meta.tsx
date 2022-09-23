@@ -10,7 +10,7 @@ const Meta = ({ title, description }: Props) => {
 			{/* <!-- HTML Meta Tags --> */}
 			<title>{title}</title>
 			<meta name='description' content={description} />
-
+			<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
 			{/* <!-- Google / Search Engine Tags --> */}
 			<meta itemProp='name' content={title} />
 			<meta itemProp='description' content={description} />
