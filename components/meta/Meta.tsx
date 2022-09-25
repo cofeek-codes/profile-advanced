@@ -9,6 +9,7 @@ const Meta = ({ title, description }: Props) => {
 		<Head>
 			{/* <!-- HTML Meta Tags --> */}
 			<title>{title}</title>
+      <meta name="author" content="cofeek-codes"/>
 			<meta name='description' content={description} />
 			<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
 			{/* <!-- Google / Search Engine Tags --> */}
