@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { Social } from '../../storage/socials'
+import { Social, socials } from '../../storage/socials'
 
 import styles from './grid.module.scss'
 type Props = {
@@ -26,6 +26,7 @@ const GridItem = ({ social }: Props) => {
 						alt={`${social.title} icon`}
 						width={70}
 						height={70}
+						style={{ borderRadius: social.title === 'Profile' ? '50%' : 0 }}
 					/>
 				</div>
 				<div className={styles.title}>{social.title}</div>
