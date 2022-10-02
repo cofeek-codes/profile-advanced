@@ -4,6 +4,7 @@ import Intro from '../components/intro/Intro'
 import Meta from '../components/meta/Meta'
 import Projects from '../components/projects/Projects'
 import Services from '../components/services/Services'
+import Grid from '../components/socials/Grid'
 
 function HomePage() {
 	return (
@@ -16,6 +17,7 @@ function HomePage() {
 			<Intro />
 			<Services />
 			<Projects />
+			<Grid />
 			<Footer />
 		</>
 	)
