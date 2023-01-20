@@ -13,39 +13,45 @@ import styles from './header.module.scss'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 const Header = () => {
-	const links = [
-		{
-			href: '/',
-			name: 'Home',
-		},
-		{
-			href: '/projects',
-			name: 'Projects',
-		},
-	]
+	const router = useRouter()
 	return (
 		<header className={styles.header}>
 			<div className={styles.wrapper}>
 				<div className={styles.logo}>
-					<Link href='/'>
-						<Image src={logo} alt='Logo' />
-					</Link>
+					<Image
+						src='/cofeek-logo.svg'
+						width='147'
+						height='77'
+						alt='Logo'
+						onClick={e => {
+							router.push('/')
+						}}
+					/>
 				</div>
 				<nav className={styles.nav}>
 					<ul>
-						{links.map(({ href, name }) => (
-							<li key={name}>
-								<motion.div
-									whileHover={{
-										borderBottom: '3px solid #fff',
-										paddingBottom: 5,
-									}}
-								>
-									<Link href={href}>{name}</Link>
-								</motion.div>
-							</li>
-						))}
+						<li>
+							<motion.div
+								whileHover={{
+									borderBottom: '3px solid #fff',
+									paddingBottom: 5,
+								}}
+							>
+								<Link href='/'>Home</Link>
+							</motion.div>
+						</li>
+						<li>
+							<motion.div
+								whileHover={{
+									borderBottom: '3px solid #fff',
+									paddingBottom: 5,
+								}}
+							>
+								<Link href='/projects'>Projects</Link>
+							</motion.div>
+						</li>
 					</ul>
 				</nav>
 				<div className={styles.burger}>
@@ -60,13 +66,16 @@ const Header = () => {
 							variant='outline'
 						/>
 						<MenuList>
-							{links.map(({ href, name }) => (
-								<MenuItem key={name}>
-									<Box style={{ fontWeight: 'bold' }}>
-										<Link href={href}>{name}</Link>
-									</Box>
-								</MenuItem>
-							))}
+							<MenuItem>
+								<Box style={{ fontWeight: 'bold' }}>
+									<Link href={'/'}>Home</Link>
+								</Box>
+							</MenuItem>
+							<MenuItem>
+								<Box style={{ fontWeight: 'bold' }}>
+									<Link href={'/projects'}>Projects</Link>
+								</Box>
+							</MenuItem>
 						</MenuList>
 					</Menu>
 				</div>
