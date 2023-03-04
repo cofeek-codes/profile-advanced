@@ -1,4 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
+import { HamburgerIcon } from '@chakra-ui/icons'
 import {
 	Box,
 	IconButton,
@@ -7,13 +8,10 @@ import {
 	MenuItem,
 	MenuList,
 } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
-import logo from '../../assets/cofeek-logo.svg'
-import styles from './header.module.scss'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
+import styles from './header.module.scss'
 const Header = () => {
 	const router = useRouter()
 	return (
@@ -33,24 +31,14 @@ const Header = () => {
 				<nav className={styles.nav}>
 					<ul>
 						<li>
-							<motion.div
-								whileHover={{
-									borderBottom: '3px solid #fff',
-									paddingBottom: 5,
-								}}
-							>
+							<div>
 								<Link href='/'>Home</Link>
-							</motion.div>
+							</div>
 						</li>
 						<li>
-							<motion.div
-								whileHover={{
-									borderBottom: '3px solid #fff',
-									paddingBottom: 5,
-								}}
-							>
+							<div>
 								<Link href='/projects'>Projects</Link>
-							</motion.div>
+							</div>
 						</li>
 					</ul>
 				</nav>
