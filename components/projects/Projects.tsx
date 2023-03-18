@@ -24,7 +24,11 @@ function Projects() {
 						<a href={project.href} key={project.name}>
 							<div className={styles.card}>
 								<div className={styles.image}>
-									<Image src={project.image} alt={project.name} />
+									<Image
+										src={project.image}
+										placeholder='blur'
+										alt={project.name}
+									/>
 								</div>
 								<div className={styles.card__title}>{project.name}</div>
 							</div>
