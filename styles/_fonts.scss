@@ -1,0 +1,10 @@
+$wrapper: 1920;
+@mixin fza($min, $default) {
+    $added: #{$default - $min};
+    @media (max-width: 767px) {
+        font-size: calc(#{$min + px} + (#{$added} + #{$added} * 0.7) * ((100vw - 320px) / #{$wrapper}));
+    }
+    @media (min-width: 767px) {
+        font-size: calc(#{$min + px} + #{$added} * (100vw / #{$wrapper}));
+    }
+}

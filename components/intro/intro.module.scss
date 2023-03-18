@@ -1,13 +1,4 @@
-$wrapper: 1920;
-@mixin fza($min, $default) {
-    $added: #{$default - $min};
-    @media (max-width: 767px) {
-        font-size: calc(#{$min + px} + (#{$added} + #{$added} * 0.7) * ((100vw - 320px) / #{$wrapper}));
-    }
-    @media (min-width: 767px) {
-        font-size: calc(#{$min + px} + #{$added} * (100vw / #{$wrapper}));
-    }
-}
+@import "/styles/fonts";
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -86,4 +77,3 @@ $wrapper: 1920;
         pointer-events: all;
     }
 }
-

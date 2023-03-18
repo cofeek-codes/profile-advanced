@@ -1,3 +1,4 @@
+@import "/styles/fonts";
 .list__title {
   color: #fff;
   font-weight: bold;
@@ -13,22 +14,25 @@
   flex-direction: column;
 }
 .list__title {
-  font-size: 42px;
+  @include fza(24, 42);
   font-weight: bold;
 }
-@media (max-width: 767px) {
-  .list__title {
-    font-size: 31px;
-    font-weight: bold;
-  }
+
+@media (max-width: 860px) {
   .list div {
-    font-size: 21px;
+    text-align: center;
+    margin: 0 15px;
+  }
+  .list__title {
+    text-align: center;
+    margin: 0 15px;
   }
 }
+
 .list {
   div {
     margin: 15px 0;
-    font-size: 31px;
+    @include fza(16, 31);
     font-weight: bold;
   }
 }
