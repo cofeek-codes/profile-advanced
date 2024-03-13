@@ -51,7 +51,7 @@ export const socials: Social[] = [
 			path: '/avatar.jpg',
 			width: 30,
 		},
-		link: 'https://cofeek-codes.online',
+		link: '/', // this link (https://profile-advanced-eaptj0hpc-cofeek-codes.vercel.app/)
 		title: 'Profile',
 	},
 
