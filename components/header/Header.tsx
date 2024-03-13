@@ -55,14 +55,18 @@ const Header = () => {
 						/>
 						<MenuList>
 							<MenuItem>
-								<Box style={{ fontWeight: 'bold' }}>
-									<Link href={'/'}>Home</Link>
-								</Box>
+								<Link href={'/'}>
+									<Box style={{ fontWeight: 'bold' }}>
+										Home
+									</Box>
+								</Link>
 							</MenuItem>
 							<MenuItem>
-								<Box style={{ fontWeight: 'bold' }}>
-									<Link href={'/projects'}>Projects</Link>
-								</Box>
+								<Link href={'/projects'}>
+									<Box style={{ fontWeight: 'bold' }}>
+										Projects
+									</Box>
+								</Link>
 							</MenuItem>
 						</MenuList>
 					</Menu>
