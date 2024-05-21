@@ -1,36 +1,36 @@
 {
-    "name": "profile-advanced",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
-    },
-    "dependencies": {
-        "@chakra-ui/icons": "^2.0.9",
-        "@chakra-ui/react": "^2.3.4",
-        "@emotion/react": "^11",
-        "@emotion/styled": "^11",
-        "@vercel/analytics": "^0.1.3",
-        "framer-motion": "^6",
-        "next": "12.3.1",
-        "prettier": "^2.7.1",
-        "pretty-quick": "^3.1.3",
-        "react": "18.2.0",
-        "react-dom": "18.2.0",
-        "sass": "^1.54.9"
-    },
-    "devDependencies": {
-        "@types/node": "18.7.18",
-        "@types/react": "18.0.20",
-        "@types/react-dom": "18.0.6",
-        "autoprefixer": "^10.4.12",
-        "eslint": "8.23.1",
-        "eslint-config-next": "12.3.1",
-        "postcss": "^8.4.17",
-        "tailwindcss": "^3.1.8",
-        "typescript": "4.8.3"
-    }
+	"name": "profile-advanced",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@chakra-ui/icons": "^2.0.9",
+		"@chakra-ui/react": "^2.3.4",
+		"@emotion/react": "^11",
+		"@emotion/styled": "^11",
+		"@vercel/analytics": "^0.1.3",
+		"framer-motion": "^6",
+		"next": "12.3.1",
+		"prettier": "^2.7.1",
+		"pretty-quick": "^3.1.3",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"sass": "^1.54.9"
+	},
+	"devDependencies": {
+		"@types/node": "18.7.18",
+		"@types/react": "18.0.20",
+		"@types/react-dom": "18.0.6",
+		"autoprefixer": "^10.4.12",
+		"eslint": "8.23.1",
+		"eslint-config-next": "12.3.1",
+		"postcss": "^8.4.17",
+		"tailwindcss": "^3.1.8",
+		"typescript": "4.8.3"
+	}
 }
