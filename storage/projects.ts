@@ -1,10 +1,11 @@
 import pcImage from '../assets/pc-course-image.png'
 import portfolioImage from '../assets/portfolio.png'
 import japanImage from '../assets/japan.png'
+import { StaticImageData } from 'next/image'
 
 export type Project = {
    name: string
-   image: string
+   image: StaticImageData
    href: string
 }
 
