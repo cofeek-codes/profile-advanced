@@ -22,7 +22,7 @@ const Header = () => {
 						src='/cofeek-logo.svg'
 						width='147'
 						height='77'
-						alt='Logo'
+						alt='cofeek-codes logo'
 						onClick={e => {
 							router.push('/')
 						}}
@@ -56,14 +56,12 @@ const Header = () => {
 						<MenuList>
 							<MenuItem>
 								<Link href={'/'}>
-									<Box style={{ fontWeight: 'bold', width: "100%" }}>
-										Home
-									</Box>
+									<Box style={{ fontWeight: 'bold', width: '100%' }}>Home</Box>
 								</Link>
 							</MenuItem>
 							<MenuItem>
 								<Link href={'/projects'}>
-									<Box style={{ fontWeight: 'bold', width: "100%" }}>
+									<Box style={{ fontWeight: 'bold', width: '100%' }}>
 										Projects
 									</Box>
 								</Link>
