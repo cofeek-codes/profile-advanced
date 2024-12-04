@@ -4,8 +4,9 @@ import constants from '../../constants'
 type Props = {
 	title: string
 	description: string
+	url: string
 }
-const Meta = ({ title, description }: Props) => {
+const Meta = ({ title, description, url }: Props) => {
 	return (
 		<Head>
 			{/* <!-- HTML Meta Tags --> */}
@@ -30,6 +31,8 @@ const Meta = ({ title, description }: Props) => {
 			<meta name='twitter:title' content={title} />
 			<meta name='twitter:description' content={description} />
 			<meta name='twitter:image' content={`${constants.URL}/avatar.jpg`}></meta>
+			{/* <!-- Links --> */}
+			<link rel='canonical' href={url} />
 		</Head>
 	)
 }

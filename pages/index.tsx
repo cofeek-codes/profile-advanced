@@ -5,6 +5,7 @@ import Meta from '../components/meta/Meta'
 import Projects from '../components/projects/Projects'
 import Services from '../components/services/Services'
 import Grid from '../components/socials/Grid'
+import constants from '../constants'
 
 function HomePage() {
 	return (
@@ -12,6 +13,7 @@ function HomePage() {
 			<Meta
 				title={'Cofeek-Codes | Profile'}
 				description={'Cofeek Codes web dev profile and links'}
+				url={constants.URL}
 			/>
 			<Header />
 			<Intro />
