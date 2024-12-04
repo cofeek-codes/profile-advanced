@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /assets/
+
+Sitemap: profile-advanced.vercel.app/sitemap.xml
