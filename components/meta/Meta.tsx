@@ -18,7 +18,10 @@ const Meta = ({ title, description, url }: Props) => {
 			<meta itemProp='name' content={title} />
 			<meta itemProp='description' content={description} />
 			<meta itemProp='image' content={`${constants.URL}/avatar.jpg`} />
-
+			<meta
+				name='google-site-verification'
+				content='kA7TQQbsijFYi1kZ5_IZGYvvvQPrnYlwiV9bFIhOP-Y'
+			/>
 			{/* <!-- Facebook Meta Tags --> */}
 			<meta property='og:url' content={constants.URL} />
 			<meta property='og:type' content='website' />
