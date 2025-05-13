@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@chakra-ui/icons": "^2.0.9",
-		"@chakra-ui/react": "^2.3.4",
+		"@chakra-ui/react": "^3.0.0",
 		"@emotion/react": "^11",
 		"@emotion/styled": "^11",
 		"@vercel/analytics": "^1.4.1",
