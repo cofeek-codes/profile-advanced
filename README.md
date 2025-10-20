@@ -1,6 +1,6 @@
 # My developer profile website
 
-available [here](https://cofeek-codes.online)
+available [here](https://profile-advanced.vercel.app/)
 
 # Built with
 
